@@ -1,0 +1,142 @@
+.my {
+    background: #F2F4F7;
+    min-height: 100vh;
+    :global {
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 22px 18px 40px 18px;
+            .userInfo {
+                display: flex;
+                .user-left {
+                    width: 56px;
+                    height: 56px;
+                    .van-image {
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                }
+                .user-right {
+                    margin-left: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .userName {
+                        font-size: 20px;
+                        color: hsla(0,0%,100%,.9);
+                        font-weight: 500;
+                    }
+                    .userId {
+                        font-size: 12px;
+                        // margin-top: 5px;
+                        color: hsla(0,0%,100%,.5);
+                        display: flex;
+                        align-items: center;
+                        .fblogo {
+                            width: 14px;
+                            height: 14px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .amount {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+                height: 64px;
+                .amount-left {
+                    display: flex;
+                    align-items: center;
+                    .van-image {
+                        margin-left: 13px;
+                        margin-right: 5px;
+                    }
+                    .num {
+                        margin-right: 2px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                    }
+                    .text {
+                        margin-right: 10px;
+                        font-size: 14px;
+                        color: hsla(0,0%,100%,.5);
+                    }
+                }
+                .amount-right {
+                    position: relative;
+                    .amount-btn {
+                        .van-button {
+                            width: auto;
+                            height: 32px;
+                            background-color: #e83a57;
+                            border: 1px solid #e83a57;
+                        }
+                    }
+                    .text {
+                        margin-right: 10px;
+                        font-size: 14px;
+                        color: hsla(0,0%,100%,.5);
+                    }
+                    .cancel-btn {
+                        position: absolute;
+                        color: #e83a57;
+                        font-size: 14px;
+                        bottom: -25px;
+                        right: 10px;
+                    }
+                }
+            }
+            .mt0 {
+                margin-top: 0;
+            }
+            .mt20 {
+                margin-top: 20px;
+            }
+            .mb10 {
+                margin-bottom: 10px;
+            }
+            .nav-list {
+                .van-cell {
+                    display: flex;
+                    align-items: center;
+                    color: hsla(0,0%,100%,.9);
+                    background-color: #000000;
+                    height: 64px;
+                    line-height: 64px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding: 0;
+                    &::after {
+                        display: none;
+                    }
+                    .van-image,
+                    .van-icon {
+                        margin-right: 12px;
+                    }
+                }
+            }
+            .btn-logOut {
+                padding: 60px 30px 0;
+                .van-button {
+                    height: 42px;
+                    line-height: 42px;
+                    color: hsla(0,0%,100%,.6);
+                    border: 1px solid #5e5e5e;
+                    background-color: #000000;
+                    font-size: 14px;
+                }
+            }
+        }
+        .mt-12 {
+            margin-top: 12px;
+        }
+        .cancel-dialog {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #646566;
+        }
+    }
+}

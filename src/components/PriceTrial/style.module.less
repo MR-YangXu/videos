@@ -1,0 +1,234 @@
+.priceTrial {
+    width: 343px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 48px;
+    overflow: hidden;
+
+    ::placeholder {
+        color: #999;
+    }
+
+    :global {
+        .trial-box {
+            padding: 20px 16px 0px;
+        }
+
+        .van-collapse-item__title {
+            padding: 16px;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .van-collapse-item__content {
+            padding-top: 0;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: #333333;
+
+            .van-image {
+                margin-right: 10px;
+            }
+        }
+
+        .tab-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tab {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            span {
+                position: relative;
+                display: block;
+                margin-right: 24px;
+                color: #333333;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                padding-bottom: 13px;
+                &.active {
+                    // background-color: #FFF1E5;
+                    // color: #FE7600;
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        content: '';
+                        width: 16px;
+                        height: 3px;
+                        left: 24px;
+                        bottom: 0px;
+                        background: #2F66FF;
+                        border-radius: 3px 3px 3px 3px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .tab-box-right {
+            height: 17px;
+            line-height: 17px;
+            font-size: 12px;
+            color: #2F66FF;
+            cursor: pointer;
+        }
+        .van-hairline--top-bottom {
+            &::after {
+                border-top-width: 0;
+            }
+            .van-cell:after {
+                left: 0;
+                right: 0;
+            }
+        }
+        
+        .van-cell-group {
+            .van-cell {
+                padding: 16px 0;
+
+                &.c333 {
+                    .van-cell__value {
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .tip {
+            font-size: 12px;
+            color: #999999;
+            text-align: center;
+            margin: 16px 0;
+        }
+        .amount-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 16px 0;
+            .title {
+                color: #999999;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .value {
+                height: 24px;
+                line-height: 24px;
+                margin-top: 4px;
+                font-size: 16px;
+                color: #FE7600;
+            }
+        }
+        .sub-text {
+            line-height: 17px;
+            text-align: center;
+            font-size: 12px;
+            padding: 6px 0;
+            color: #999999;
+            background: rgba(239,239,242,0.6);
+        }
+        .desc {
+            font-size: 12px;
+            padding-top: 10px;
+        }
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            .van-button {
+                // width: 120px;
+                height: 50px;
+                line-height: 50px;
+                box-shadow: 0px 2px 8px 0px rgba(240, 44, 28, 0.25);
+                background-color: #FE7600;
+                color: #fff;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .price-trial-dialog {
+            .content {
+                padding: 20px;
+
+                .item {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    >div {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        flex-direction: column;
+                        align-items: flex-end;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        font-weight: normal;
+                        color: #1D1D26;
+                        font-size: 14px;
+                    }
+
+                    .highlight {
+                        color: #FE7600;
+                        font-weight: 600;
+                    }
+
+                    .sub-text {
+                        background-color: #fe770011;
+                        color: #FE7600;
+                        font-size: 12px;
+                        padding: 4px 8px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .tip {
+                background: #F5F6F8;
+                font-size: 12px;
+                color: #1D1D26;
+                padding: 4px 0;
+
+                .van-icon {
+                    margin-right: 4px;
+                }
+            }
+
+            .btn-box {
+                display: flex;
+                justify-content: center;
+                margin: 26px 0 24px 0;
+                .van-button {
+                    width: 264px;
+                    height: 44px;
+                    background: #FE7600;
+                    box-shadow: 0px 2px 8px 0px rgba(240, 44, 28, 0.25);
+                    border: none;
+                }
+            }
+
+        }
+    }
+}

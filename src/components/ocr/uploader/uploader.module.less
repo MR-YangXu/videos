@@ -1,0 +1,81 @@
+
+.uploader-image {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #CECECE;
+  :global {
+    img {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    .action-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &.cover {
+        background: rgba(15, 15, 16, 0.6);
+        border-radius: 8px;
+        .title {
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+        .button {
+          width: 85px;
+		      line-height: 100%;
+          padding:2px 0px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 18px;
+          border: 1px solid #FFFFFF;
+          font-size: 14px;
+          color: #FFFFFF;
+          margin-top: 10px;
+        }
+        .success {
+          margin-top: 8px;
+          font-size: 14px;
+          color: #FFFFFF;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .loading {
+      width: 40%;
+      height: 40%;
+      min-width: 52px;
+      min-height: 52px;
+      :global {
+        .van-loading__spinner {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .uploader-icon.success{
+      width: 17.5%;
+      height: 17.5%;
+      min-width: 28px;
+      min-height: 28px;
+    }
+
+    .uploader-icon {
+      width: 30%;
+      height: 30%;
+      min-width: 36px;
+      min-height: 36px;
+    
+      .van-icon__image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

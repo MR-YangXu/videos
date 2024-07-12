@@ -1,0 +1,43 @@
+.MyBg {
+    min-height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+    color: #FFF;
+    :global {
+        .my-header-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+            border-bottom: 1px solid hsla(0,0%,100%,.16);
+            background-color: #343434;
+            .header-box-navMenu {
+                padding: 0 18px;
+                img {
+                    // width: 90px;
+                    height: 25px;
+                }
+            }
+            .hader-box-user {
+                display: flex;
+                align-items: center;
+                padding-right: 16px;
+                .history-icon {
+                    font-size: 24px;
+                    color: rgb(180, 180, 180);
+                    margin-right: 24px;
+                }
+                img {
+                    width: 21px;
+                    height: 21px;
+                }
+                span {
+                    font-size: 14px;
+                    color: hsla(0,0%,100%,.9);
+                    margin-left: 4px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

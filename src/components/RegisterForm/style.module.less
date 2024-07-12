@@ -1,0 +1,115 @@
+.form {
+    width: 343px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+    ::placeholder {
+        color: #999;
+    }
+
+    :global {
+        .van-field {
+            padding: 16px;
+            position: relative;
+            overflow: unset;
+
+            .van-cell__value {
+                position: unset;
+            }
+
+            .van-field__error-message {
+                position: absolute;
+                left: 16px;
+                bottom: -20px;
+                color: #E32E34;
+                z-index: 99;
+            }
+        }
+
+        .van-field:has(.van-field__error-message) {
+            &::after {
+                border-bottom: 1px solid #E32E34;
+            }
+        }
+
+        .sms-btn {
+            padding: 0;
+            border: none;
+            font-size: 14px;
+            color: #2C6EFF;
+            position: relative;
+            width: 80px;
+
+            &.van-button--disabled {
+                color: #999;
+                opacity: 1;
+            }
+
+            &::before {
+                display: block;
+                content: '';
+                width: 0.5px;
+                height: 15px;
+                background-color: #999999;
+                position: absolute;
+                left: -8px;
+                top: 15px;
+                opacity: 1;
+            }
+        }
+
+        .agreement-box {
+            margin: 0;
+            padding: 0;
+            .van-field__error-message {
+                bottom: 0px;
+            }
+            &.van-field:has(.van-field__error-message) {
+                &::after {
+                    display: none;
+                }
+            }
+            .agreement {
+                margin: 20px 0 20px 16px;
+    
+                .van-checkbox__label {
+                    color: #999;
+                    font-size: 12px;
+    
+                    span {
+                        color: #1B1B1B;
+                    }
+                }
+                .img-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+       
+
+        .submit-btn {
+            height: 44px;
+            background: #FE7600;
+            box-shadow: 0px 2px 8px 0px rgba(240, 44, 28, 0.25);
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.dialogContent {
+    p {
+        font-size: 14px;
+        color: #1D1D26;
+        text-align: left;
+        line-height: 24px;
+        a {
+            color: #2168FF;
+        }
+    }
+}

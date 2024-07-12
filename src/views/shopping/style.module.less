@@ -1,0 +1,189 @@
+.shopping {
+    background: linear-gradient(360deg, #180E0E 0%, #241616 49.8%, #301A1A 80.39%, #A02323 81.02%, #820D0C 83.71%, #BA2C2B 89.82%, #F2605F 105.73%);
+    color: #FFFFFF;
+    min-height: 100vh;
+    :global {
+        .van-nav-bar {
+            background: transparent;
+            &::after {
+                display: none;
+            }
+            .van-nav-bar__left {
+                padding: 0;
+            }
+            .van-icon {
+                color: #FFFFFF;
+                font-size: 5.33333vw;
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 16px 40px;
+            .header {
+                display: flex;
+                margin-bottom: 26px;
+                .header-left {
+                    .title {
+                        font-family: PingFang SC;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 22.4px;
+                        text-align: left;
+                    }
+                    .icon-box {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 0;
+                        .van-image {
+                            background-color: #FFFFFF;
+                            margin-right: 7px;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                .header-right {
+                    margin-left: 23px;
+                }
+            }
+            .creditCard-box {
+                .van-cell {
+                    background: transparent;
+                    // border-bottom: 1px solid #FFFFFF;
+                    padding: 0;
+                    padding-top: 16px;
+                    &::after {
+                        display: none;
+                    }
+                    input::placeholder {
+                        color: #FFFFFF66; /* 修改占位符文本颜色 */
+                        font-size: 14px; /* 修改占位符文本字体大小 */
+                        // font-style: italic; /* 修改占位符文本字体样式 */
+                        opacity: 0.8; /* 修改占位符文本透明度 */
+                    }
+                    .van-cell__title {
+                        color: #FFFFFF66;
+                        font-family: PingFang SC;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        text-align: left;
+                        margin-bottom: 8px;
+                    }
+                    .van-field__control {
+                        color: #FFFFFF;
+                        height: 48px;
+                        line-height: 48px;
+                        border: 1px solid #FFFFFF1A;
+                        background: #FFFFFF1A;
+                        border-radius: 8px;
+                        padding: 0px 16px;
+                    }
+                }
+                .cardNum,
+                .cvv {
+                    .van-field__right-icon {
+                        padding-right: 20px;
+                    }
+                }
+                .cvv {
+                    margin-left: 20px;
+                }
+                .item-box {
+                    display: flex;
+                }
+            }
+            .amount-box {
+                position: relative;
+                margin-top: 16px;
+                background-color: #212020;
+                padding: 16px;
+                font-size: 14px;
+                border-radius: 10px;
+                .amount-popup {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: linear-gradient(270deg, #FFA756 -11.1%, #FF6C19 115.59%);
+                    font-size: 10px;
+                    padding: 3px 8px;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 16px;
+                }
+                .amount-main {
+                    display: flex;
+                    align-items: center;
+                    .box-left {
+                        font-family: Gilroy;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24.96px;
+                        text-align: center;
+                    }
+                    .box-right {
+                        font-family: PingFang SC;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 19.6px;
+                        text-align: center;
+                        margin-left: 8px;
+                        text-decoration: line-through;
+                        color: #FFFFFF66;                 ;
+                    }
+                }
+                .premium {
+                    font-family: PingFang SC;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19.6px;
+                    color: #FFFFFF;
+                }
+                .unlock-desc {
+                    font-family: PingFang SC;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                    color: #FFFFFF66;
+                    margin-top: 8px;
+                }
+            }
+            .desc {
+                margin-top: 20px;
+                font-size: 12px;
+                .price-desc {
+                    color: #FF9341;
+                }
+            }
+            .checkbox {
+                margin-top: 20px;
+                margin-bottom: 24px;
+                .van-checkbox__label {
+                    color: #FFFFFF;
+                    font-size: 14px;
+                }
+                .van-checkbox__icon--checked .van-icon {
+                    background-color: #e83a57;
+                    border-color: #e83a57;
+                }
+            }
+            .error-msg {
+                margin-bottom: 8px;
+                color: #e83a57;
+                font-size: 14px;
+            }
+            .btn-logOut {
+                padding: 0px 0px 94px;
+                .van-button {
+                    height: 48px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                    background: linear-gradient(270deg, #F73A67 0%, #E1384E 100%);
+                    border: 1px solid #F73A67;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

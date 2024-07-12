@@ -1,0 +1,91 @@
+.payItem {
+    margin-bottom: 16px;
+    :global {
+        .pay-item-box {
+            position: relative;
+            display: flex;
+            height: 90px;
+            color: #FFFFFF;
+            background: url('@/assets/images/movie/listDefault.png') no-repeat;
+            background-size: 100% 100%;
+            padding: 0 16px;
+            .pay-item-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 94px;
+                .left-total-price {
+                    font-family: 'Black';
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: 25.76px;
+                    text-align: left;
+                    color: #FFFFFF;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .left-day-price {
+                    font-family: PingFang SC;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19.6px;
+                    text-align: left;
+                    color: #FFFFFF66;
+                }
+            }
+            .pay-item-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .right-title {
+                    font-family: PingFang SC;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19.6px;
+                    text-align: left;
+                    color: #FFFFFF;
+                    span {
+                        font-family: PingFang SC;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18.2px;
+                        text-align: left;
+                        color: #FFFFFFB2;
+                    }
+                }
+                .right-desc {
+                    font-family: PingFang SC;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16.8px;
+                }
+            }
+            .amount-popup {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(-40%);
+                // background: linear-gradient(270deg, #FFA756 -11.1%, #FF6C19 115.59%);
+                background: linear-gradient(270deg, #991FF9 0.23%, #E64BFF 99.77%);
+                font-size: 10px;
+                padding: 3px 8px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 8px;
+            }
+        }
+        .isActive {
+            background: url('@/assets/images/movie/listActive.png') no-repeat;
+            background-size: 100% 100%;
+            .amount-popup  {
+                border: 2px solid #FF912C;
+            }
+            .left-total-price {
+                color: #FF912C !important;
+            }
+        }
+    }
+}

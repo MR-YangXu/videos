@@ -1,0 +1,45 @@
+.homeItem {
+    width: 100%;
+    padding: 8px 16px 16px;
+    :global {
+        .van-cell {
+            padding: 0;
+            padding-bottom: 16px;
+            height: 40px;
+            background-color: #000000;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 24px;
+            &::after {
+                display: none;
+            }
+            .van-cell__right-icon {
+                font-size: 20px;
+            }
+        }
+        .movie-wrap {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 8px;
+        }
+        .movie-wrap-rows {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .movieItemRow {
+                &:last-child {
+                    .movieItem-wrap {
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .movieItem-wrap {
+                margin-right: 10px;
+            }
+        }
+    }
+}

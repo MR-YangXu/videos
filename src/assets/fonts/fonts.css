@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Financial-Bold';
+  src: url('./Financial-Bold.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Financial-Regular';
+  src: url('./Financial-Regular.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Financial-Test';
+  src: url('./360-Financial-Test-05-Bold.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'kcb-iconfont'; /* Project id  */
+  src: url('iconfont.ttf?t=1651131203804') format('truetype');
+}
+/**
+  添加对勾样式用于缓解合同对勾
+*/
+@font-face {
+  font-family: 'Wingdings 2'; /* Project id  */
+  src: url('w2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'D-DIN-Bold';
+  src: url('./D-DIN-Bold.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('./D-DIN.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'DIN-Medium';
+  src: url('./DIN-Medium.otf');
+  font-weight: normal;
+  font-size: normal;
+}
+
+
+
+
+.kcb-iconfont {
+  font-family: 'kcb-iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kcb-iconfont-choice:before {
+  content: '\e60b';
+  color: #2f66ff;
+}
+
+.kcb-iconfont-unchoice:before {
+  content: '\e60c';
+  color: #cccccc;
+}

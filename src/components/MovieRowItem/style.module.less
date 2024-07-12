@@ -1,0 +1,46 @@
+.movieRowItem {
+    :global {
+        .movieRowItem-wrap {
+            position: relative;
+            display: flex;
+            // flex-direction: column;
+            padding: 10px 12px;
+            .van-image {
+                border-radius: 8px;
+                overflow: hidden;
+                margin-right: 15px;
+            }
+            .movieRowItem-info {
+                max-width: calc(100vw - 130px);
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                position: relative;
+                font-size: 12px;
+                .info-title {
+                    max-width: -webkit-calc(100% - 35px);
+                    max-width: calc(100% - 35px);
+                    color: #fff;
+                    height: 30px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 16px;
+                }
+                .info-chapter {
+                    margin-top: 3px;
+                    height: 12px;
+                    color: hsla(0,0%,91%,.62);
+                    font-size: 12px;
+                }
+            }
+            .movieRowItem-collect {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                right: 20px;
+                top: 14px;
+            }
+        }
+    }
+}

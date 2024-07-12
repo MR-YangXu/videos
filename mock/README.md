@@ -1,0 +1,4 @@
+- 新增
+    - 以method命名mock的接口文件，eg: `api/kcms.user.login.js`
+    - 文件export，可以是对象，这样每次返回的数据就都是一样的
+    - 文件export，可以是函数，函数第一个参数是bizConent，eg:(bizContent) => {}

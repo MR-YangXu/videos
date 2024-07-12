@@ -1,0 +1,28 @@
+.nothingBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    :global {
+        .nothing-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .van-image {
+                width: 132px;
+                height: 100px;
+            }
+            .title {
+                text-align: center;
+                width: 278px;
+                color: hsla(0,0%,60%,.7);
+                font-size: 14px;
+                margin-top: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.protocolList {
+    width: 100%;
+    :global {
+        .footer-wrap {
+            padding-bottom: 80px;
+            .van-cell {
+                background-color: #000000;
+                color: hsla(0,0%,100%,.6);
+                font-size: 12px;
+                &::after {
+                    border-bottom: 1px solid hsla(0,0%,100%,.4);
+                }
+            }
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                color: hsla(0,0%,100%,.4);
+                font-size: 12px;
+                img {
+                    margin: 20px auto 0;
+                    height: 20px;
+                    width: 90px;
+                }
+                .footer-community {
+                    display: flex;
+                    justify-content: center;
+                    margin: 12px 0 10px;
+                    .label {
+                        font-weight: 500;
+                        margin-right: 5px;
+                    }
+                    .communityItem {
+                        padding: 0 5px;
+                    }
+                }
+                .footer-fmail {
+                    margin: 12px 0 10px;
+                    display: block;
+                    text-align: center;
+                    line-height: 14px;
+                    color: hsla(0,0%,100%,.4);
+                }
+                .footer-fText {
+                    text-align: center;
+                    margin-top: 4px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}
