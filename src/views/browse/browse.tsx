@@ -6,7 +6,6 @@ import MovieItem from '@/components/MovieItem'
 import browserMore from '@/assets/images/movie/browser-more.webp';
 import browserMoreTop from '@/assets/images/movie/browser-more-top.png';
 import { tagLists, browses } from '@/apis/common';
-import { handleLoadingNew } from '@/utils/handleResponse';
 import { showToast } from 'vant';
 import { useRouter } from 'vue-router';
 import Nothing from '@/components/Nothing';
