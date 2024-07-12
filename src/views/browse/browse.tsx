@@ -8,6 +8,7 @@ import browserMoreTop from '@/assets/images/movie/browser-more-top.png';
 import { tagLists, browses } from '@/apis/common';
 import { showToast } from 'vant';
 import { useRouter } from 'vue-router';
+// 无数据页
 import Nothing from '@/components/Nothing';
 
 // 注册页
